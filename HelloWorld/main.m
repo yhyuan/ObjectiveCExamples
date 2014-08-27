@@ -1,5 +1,6 @@
 //make LDFLAGS="-lbsd"
 #import <Foundation/Foundation.h>
+//@import Foundation;
 #import "CarUtilities.h"
 
 int main(int argc, const char * argv[]) {
