@@ -5,6 +5,7 @@
 }
 
 @property (copy) NSString *model;
+@property (getter=isRunning) BOOL running;
 
 -(void) drive;
 

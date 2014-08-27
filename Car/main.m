@@ -3,6 +3,11 @@
 
 int main(int argc, const char * argv[]) {
 	@autoreleasepool {
+    Car *honda = [[Car alloc] init];
+    honda.running = YES;                // [honda setRunning:YES]
+    NSLog(@"%d", honda.running);        // [honda running]
+    NSLog(@"%d", [honda isRunning]);        // [honda running]
+
 		Car *nissan = [[Car alloc] init];
 		NSLog(@"Created a %@.", [nissan model]);
 
