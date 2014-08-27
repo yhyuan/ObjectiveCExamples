@@ -3,9 +3,9 @@
 int main(int argc, const char * argv[]) {
 	@autoreleasepool {
 		int year = 1967;
-		int *pointer = &year;
-		NSLog(@"%d", *pointer);
-		pointer = NULL;
+		void *genericPointer = &year;
+		int *intPointer = (int *)genericPointer;
+		NSLog(@"%d", *intPointer);
 	}
 	return 0;
 } 
