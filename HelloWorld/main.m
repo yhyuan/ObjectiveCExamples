@@ -2,10 +2,13 @@
 
 int main(int argc, const char * argv[]) {
 	@autoreleasepool {
-		int year = 1967;
-		void *genericPointer = &year;
-		int *intPointer = (int *)genericPointer;
-		NSLog(@"%d", *intPointer);
+		NSString *model = @"Honda";
+		NSLog(@"%@", model);
+		model = NULL;
+		model = nil;
+		int *aPointer;
+		//aPointer = nil; //Don't do this. 
+		aPointer = NULL;
 	}
 	return 0;
 } 
