@@ -12,4 +12,4 @@ int main(int argc, const char * argv[]) {
 		NSLog(@"Your paint job is (R: %hhu, G: %hhu, B: %hhu)", carColor.red, carColor.green, carColor.blue);
 	}
 	return 0;
-}
+} 
