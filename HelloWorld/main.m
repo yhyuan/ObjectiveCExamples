@@ -2,7 +2,7 @@
 #import <Foundation/Foundation.h>
 
 //Declaration
-NSString *getRandomMake(NSArray *makes);
+static NSString *getRandomMake(NSArray *makes);
 
 int main(int argc, const char * argv[]) {
 	@autoreleasepool {
@@ -13,7 +13,7 @@ int main(int argc, const char * argv[]) {
 } 
 
 //Implementation
-NSString *getRandomMake(NSArray *makes) {
+static NSString *getRandomMake(NSArray *makes) {
 	int maximum = (int)[makes count];
 	int randomIndex = 1; //arc4random_uniform(maximum);
 	return makes[randomIndex];
