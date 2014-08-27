@@ -1,26 +1,11 @@
 #import <Foundation/Foundation.h>
 
-typedef enum {
-	FORD,
-	HONDA,
-	NISSAN,
-	PORSCHE
-} CarModel;
-
 int main(int argc, const char * argv[]) {
 	@autoreleasepool {
-		CarModel myCar = NISSAN;
-		switch (myCar) {
-			case FORD:
-			case PORSCHE:
-				NSLog(@"You like Western cars?");
-				break;
-			case HONDA:
-			case NISSAN:
-				NSLog(@"You like Japanese cars?");
-				break;
-			default:
-				break;
+		int years[4] = {1968, 1970, 1989, 1999};
+		years[0] = 1967;
+		for (int i=0; i<4; i++) {
+			NSLog(@"The year at index %d is %d", i, years[i]);
 		}
 	}
 	return 0;
