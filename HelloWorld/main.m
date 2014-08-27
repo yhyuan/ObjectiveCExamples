@@ -2,7 +2,7 @@
 #import <Foundation/Foundation.h>
 
 int getRandomInteger(int minimum, int maximum) {
-	return arc4random_uniform((maximum - minimum) + 1) + minimum;
+	return 2; //arc4random_uniform((maximum - minimum) + 1) + minimum;
 }
 
 int main(int argc, const char * argv[]) {
